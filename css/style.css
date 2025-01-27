@@ -1,0 +1,56 @@
+@import url('variables.css');
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.div__logo{
+/*     background-color: aqua;
+    padding: 15px */
+}
+.div__menu{
+    /* background-color: blue;
+    padding: 15px */
+}
+.ul__menu{
+/*     background-color: red;
+    padding: 15px; */
+    display: flex;
+    gap: 20px;
+    
+}
+.ul__menu li{
+    list-style: none;
+}
+
+/******** main *******/
+
+.main{
+    background-color: rebeccapurple;
+    padding: 20px;
+}
+.section__home{
+    height: 100svh;
+}
+.article__home{
+    position: absolute;
+    width: 626px;
+    height: 360px;
+    left: 287px;
+    top: 332px;
+    flex-direction: column;
+    gap: 1px;
+    span{
+        font-size: 28px;
+    }
+    h1{
+        font-size: 80px ;
+    }
+    p{
+        font-size: 20px;
+    }
+}
