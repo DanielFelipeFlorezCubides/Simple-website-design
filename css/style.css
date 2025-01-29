@@ -1,4 +1,4 @@
-@import url('variables.css');
+@import url('variable.css');
 *{
     padding: 0;
     margin: 0;
@@ -31,7 +31,7 @@
     display: flex;
     gap: 100px;
     padding-right: 100px;
-    color: var(--font-color-1);
+    color: white;
 }
 .ul__menu li{
     list-style: none;
@@ -43,7 +43,7 @@
     /* padding: 20px; */
 }
 .section__home {
-    background-image: linear-gradient(var(--color-gradient-1), var(--color-gradient-2) 100%), var(--banner-1);
+    background-image: linear-gradient(var(--color-gradient-1), var(--color-gradient-2)), var(--background-1);;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    color: var(--font-color-1);
+    color: white;
     
 }
 .article__home span{
@@ -99,6 +99,7 @@
     }
     .ul__menu{
         gap: 15px;
+        padding-right: 15px;
     }
     .section__home{
         display: flex;
@@ -131,7 +132,19 @@
         /* background: blue; */
         justify-content: normal;
     }
-
+    .div__logo{
+        flex: 1;
+        /* background: red; */
+    }
+    .div__menu{
+        width: 100%;
+        /* background: violet; */
+    }
+    .ul__menu{
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+    }
     .article__home{
         top: 25svh;
     }
