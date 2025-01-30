@@ -84,12 +84,20 @@
     background: #071917;
     display: flex;
     justify-content: space-evenly;
+    padding: 35px;
 }
 
-.section__icon img{
-    /* background: violet; */
+.section__images{
+    background: #071917;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    img{
+        width: 1394px;
+        height: 848px;
+        margin: 20px 15px 17px 40px;
+    }
 }
-
 
 /************** version movil **********************/
 @media (max-width: 960px) {
