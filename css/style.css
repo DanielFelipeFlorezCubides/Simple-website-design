@@ -6,7 +6,7 @@
 }
 /********** header ******************/
 .header {
-    /* background: orange; */
+     /* background: orange; */
     /* padding: 15px; */
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@
     /* padding: 15px; */
 }
 .ul__menu {
-    /* background: violet; */
+     /* background: violet;  */
     /* padding: 15px; */
     display: flex;
     gap: 100px;
@@ -36,6 +36,11 @@
 .ul__menu li{
     list-style: none;
     font-family: "Montserrat-SemiBold";
+}
+
+.ul__menu li a{
+    text-decoration: none;
+    color: white;
 }
 /********** main ******************/
 .main {
