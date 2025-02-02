@@ -39,14 +39,113 @@
             <img src="storage/img/icon6.png">
         </section>
         <section class="section__images">
-            <img src="storage/img/img1.png" alt="">
-            <img src="storage/img/img2.png" alt="">
-            <img src="storage/img/img3.png" alt="">
+            <div>
+                <img src="storage/img/img1.png" >
+                <h1>URBAN PLANNING</h1>
+            </div>
+            <div>
+                <img src="storage/img/img2.png" >
+                <h1>GRAPHICS DESIGN</h1>
+            </div>
+            <div>
+                <img src="storage/img/img3.png" >
+                <h1>ART</h1>
+            </div>
+        </section>
+        <section class="section__slider">
+            <h1>Latest Blog</h1>
+            <div class="slider__container">
+                <div class="slider">
+                    <div class="card">
+                        <img src="storage/img/card0.png" alt="">
+                        <h2>Lörem ipsum patt kar i renyst</h2>
+                        <p>Lörem ipsum patt kar i renyst robotfälla. Tregyktig  sana, nuktigt i mandatpingis tes. Analigt anede. Arat lagen</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="card">
+                        <img src="storage/img/card1.png" alt="">
+                        <h2>Lörem ipsum patt kar i renyst</h2>
+                        <p>Lörem ipsum patt kar i renyst robotfälla. Tregyktig  sana, nuktigt i mandatpingis tes. Analigt anede. Arat lagen</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="card">
+                        <img src="storage/img/card2.png" alt="">
+                        <h2>Lörem ipsum patt kar i renyst</h2>
+                        <p>Lörem ipsum patt kar i renyst robotfälla. Tregyktig  sana, nuktigt i mandatpingis tes. Analigt anede. Arat lagen</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="card">
+                        <img src="storage/img/card3.png" alt="">
+                        <h2>Lörem ipsum patt kar i renyst</h2>
+                        <p>Lörem ipsum patt kar i renyst robotfälla. Tregyktig  sana, nuktigt i mandatpingis tes. Analigt anede. Arat lagen</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="card">
+                        <img src="storage/img/card4.png" alt="">
+                        <h2>Lörem ipsum patt kar i renyst</h2>
+                        <p>Lörem ipsum patt kar i renyst robotfälla. Tregyktig  sana, nuktigt i mandatpingis tes. Analigt anede. Arat lagen</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer__section">
+        <div class="footer__images">
+            <img src="storage/img/footerImages.png" alt="">
+        </div>
     </footer>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        let index = 0;
+        const totalSlides = document.querySelectorAll('.card').length;
+        let isScrolling = false; // Evita múltiples scrolls seguidos
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        // Deslizar con la rueda del mouse
+        slider.addEventListener('wheel', (event) => {
+            if (isScrolling) return; // Evita cambios rápidos seguidos
+            isScrolling = true;
+
+            if (event.deltaY > 0) {
+                if (index < totalSlides - 1) {
+                    index++; // Avanza a la derecha
+                    updateSlider();
+                }
+            } else {
+                if (index > 0) {
+                    index--; // Retrocede a la izquierda
+                    updateSlider();
+                }
+            }
+
+            setTimeout(() => {
+                isScrolling = false;
+            }, 400); // Pequeño delay para evitar scroll excesivo
+
+            event.preventDefault(); // Evita el scroll de la página
+        });
+
+        // Deslizar con el dedo en móviles (touch)
+        let startX;
+        slider.addEventListener("touchstart", (event) => {
+            startX = event.touches[0].clientX;
+        });
+
+        slider.addEventListener("touchend", (event) => {
+            let endX = event.changedTouches[0].clientX;
+            if (startX > endX + 50 && index < totalSlides - 1) {
+                index++; // Deslizar a la derecha
+            } else if (startX < endX - 50 && index > 0) {
+                index--; // Deslizar a la izquierda
+            }
+            updateSlider();
+        });
+    </script>
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support

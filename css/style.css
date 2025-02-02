@@ -97,6 +97,99 @@
         height: 848px;
         margin: 20px 15px 17px 40px;
     }
+    h1{
+        font-family: "Montserrat-SemiBold";
+        font-size: 55px;
+        color: white;
+        top: -140px;
+        left: 80px;
+        position: relative;
+    }
+}
+
+.section__slider{
+    background: #071917;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1{
+        font-family: "Montserrat-Medium";
+        font-size: 45px;
+        color: white;
+        top: -80px;
+        left: 50px;
+        position: relative;
+        padding: 20px;
+    }
+}
+
+.slider__container{
+    align-items: center;
+    max-width: 1000px;
+    flex-direction: row;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 40px;
+    top: -30px;
+    padding: 30px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card{
+    width: 385px;
+    height: 627px;
+    border-radius: 30px;
+    background-color: rgba(20, 94, 42, 1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    img{
+        width: 342px;
+        height: 232px;
+    }
+    h2{
+        font-family: "Montserrat-SemiBold";
+        font-size: 28px;
+        color: white;
+    }
+    p{
+        font-family: "Montserrat-Regular";
+        font-size: 20px;
+        color: white;
+    }
+    button{
+        width: 145px;
+        height: 44px;
+        font-family: "Montserrat-Regular";
+        font-size: 20px;
+        background-color: white;
+        align-items: center;
+        left: 100px;
+        position: relative;
+        border-radius: 30px;
+    }
+}
+
+.footer__section{
+    background: #071917;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer__images{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 50px;
 }
 
 /************** version movil **********************/
