@@ -12,3 +12,15 @@
     font-family: "Montserrat-Medium";
     src: url(../storage/font/Montserrat/static/Montserrat-Medium.ttf);
 }
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(../storage/font/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(../storage/font/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../storage/font/Montserrat-Regular.ttf);
+}

@@ -15,7 +15,11 @@
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 5px;
+}
+
+.div__logo{
+    top: -6px;
+    position: relative;
 }
 
 .ul__menu {
@@ -50,7 +54,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 135svh;
+    height: 100px;
 }
 
 hr{
@@ -121,15 +125,6 @@ hr{
     left: 730px;
     border-radius: 25px;
     border-style: none;
-    h2{
-        font-family: "Montserrat-SemiBold";
-        font-size: 32px;
-        color: white;
-        position: relative;
-        top: 90px;
-        padding: 10px 50px 10px 25px;
-    }
-
     h3{
         font-family: "Montserrat-Light";
         font-size: 28px;
@@ -137,6 +132,15 @@ hr{
         position: relative;
         top: 10px;
         padding: 15px 15px 15px 25px;  
+    }
+
+    h2{
+        font-family: "Montserrat-SemiBold";
+        font-size: 32px;
+        color: white;
+        position: relative;
+        top: 90px;
+        padding: 10px 50px 10px 25px;
     }
 
     p{
@@ -162,10 +166,143 @@ hr{
         text-align: center;
         border-radius: 20px;
         border-style: none;
-        padding-left: 45px;
+        padding-left: 36px;
     }
 }
 
+.section__cards{
+    background: #071917;
+    top: -240px;
+    position: relative;
+    padding-left: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section__cards h2{
+    font-family: "Montserrat-Medium";
+    font-size: 28px;
+    color: white;
+    width: 186px;
+    height: 34px;
+}
+
+.cards__TopContainer{
+    background: #071917;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    top: 60px;
+    left: -30px;
+}
+
+.cards__BottomContainer{
+    background: #071917;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    top: 100px;
+    left: -30px;
+}
+
+.card{
+    width: 447px;
+    height: 593px;
+    border-radius: 30px;
+    background-color: rgba(20, 94, 42, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    img{
+        width: 414px;
+        height: 284px;
+        padding: 20px 0px 20px 30px;
+    }
+    h2{
+        width: 414px;
+        height: 34px;
+        font-family: "Montserrat-SemiBold";
+        font-size: 28px;
+        color: white;
+        text-align: center;
+    }
+    p{
+        font-family: "Montserrat-Regular";
+        font-size: 20px;
+        color: white;
+        padding: 0px 20px 0px 17px;
+        top: 20px;
+        position: relative;
+    }
+    button{
+        width: 145px;
+        height: 44px;
+        font-family: "Montserrat-Regular";
+        font-size: 20px;
+        background-color: white;
+        align-items: center;
+        top: 40px;
+        left: 150px;
+        position: relative;
+        border-radius: 30px;
+    }
+}
+
+.section__footer{
+    position: relative;
+    background: #071917;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.description h2{
+    width: 150px;
+    height: 34px;
+    color: white;
+    font-family: "Montserrat-Bold";
+    font-size: 28px;
+    position: relative;
+    top: -60px;
+    left: 600px;
+}
+
+.description p{
+    width: 855px;
+    height: 72px;
+    color: white;
+    font-family: "Montserrat-Regular";
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    top: -40px;
+    left: 300px;
+}
+
+.footer__images{
+    background: #071917;
+    position: relative;
+    height: 100px;
+}
+
+.footer__images img{
+    position: relative;
+    left: 500px;
+}
+
+.footer__images span{
+    background: #071917;
+    width: 370px;
+    height: 24px;
+    color: white;
+    position: relative;
+    top: 40px;
+    left: -305px;
+}
 /************** version movil **********************/
 @media (max-width: 960px) {
     .header{
